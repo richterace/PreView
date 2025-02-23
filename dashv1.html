@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PreView Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="trailer.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="clapperboard.png" alt="Logo">
+            </div>
+            <div class="user-menu">
+                <img src="user.png" alt="User Icon">
+                <img src="menu.png" alt="Menu Icon">
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">NOW SHOWING</a></li>
+                <li><a href="#">UPCOMING MOVIES</a></li>
+                <li><a href="#">CINEMAS</a></li>
+                <li><a href="#">STREAMING SOON</a></li>
+            </ul>
+        </nav>
+    </header>
+        <main>
+        <section class="now-showing">
+            <h2>Now Showing</h2>
+            <div class="movies-grid">
+                <!-- Movie cards -->
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="1.jpg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('1.jpg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="2.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('2.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="3.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('3.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="4.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('4.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="1.jpg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('1.jpg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="2.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('2.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="3.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('3.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="4.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('4.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="upcoming-movies">
+            <h2>Upcoming Movies</h2>
+            <div class="movies-grid">
+                <!-- Movie cards -->
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="5.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('5.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="1.jpg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('1.jpg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="2.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('2.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="3.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('3.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="4.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('4.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="streaming-soon">
+            <h2>Streaming Soon</h2>
+            <div class="movies-grid">
+                <!-- Movie cards -->
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="6.jpg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('6.jpg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="1.jpg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('1.jpg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="2.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('2.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="3.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('3.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster"> <img src="4.jpeg" alt="Movie Poster"></div>
+                    <div class="movie-info">
+                        <h3>Movie Name</h3>
+                        <p>2hrs, 30mins</p>
+                        <button class="popupButton" onclick="showPopup('4.jpeg', 'Movie Name 1')">Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div id="popupContainer" class="container">
+        <button class="close-btn" onclick="closeForm()">X</button>
+        <div class="movie-poster1">
+            <img id="popupImage" src="" alt="Godzilla x Kong: The New Empire" width="200">
+            <h2>GODZILLA X KONG: THE NEW EMPIRE</h2>
+        </div>
+        <div class="form-section">
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <select id="location" name="location">
+                    <option value="">Manila</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cinema">Cinema:</label>
+                <select id="cinema" name="cinema">
+                    <option value="">Select Cinema</option>
+                    <option value="SM Mall of Asia">SM Mall of Asia</option>
+                    <option value="Robinsons Place Manila">Robinsons Place Manila</option>
+                    <option value="SM City Manila">SM City Manila</option>
+                    <option value="Glorietta 4">Glorietta 4</option>
+                    <option value="Greenbelt 3">Greenbelt 3</option>
+                    <option value="Power Plant Mall">Power Plant Mall</option>
+                    <option value="Trinoma">Trinoma</option>
+                    <option value="Gateway Mall">Gateway Mall</option>
+                    <option value="Shangri-La Plaza">Shangri-La Plaza</option>
+                    <option value="SM Megamall">SM Megamall</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+            </div>
+            
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <select id="time" name="time">
+                    <option value="">Select Time</option>
+                    <option value="10:00 AM">10:00 AM</option>
+                    <option value="12:30 PM">12:30 PM</option>
+                    <option value="3:00 PM">3:00 PM</option>
+                    <option value="5:30 PM">5:30 PM</option>
+                    <option value="8:00 PM">8:00 PM</option>
+                    <option value="10:30 PM">10:30 PM</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="cinema-number">Cinema #:</label>
+                <select id="cinema-number" name="cinema-number">
+                    <option value="">Select Cinema #</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="seat-type">Seat Type:</label>
+                <select id="seat-type" name="seat-type">
+                    <option value="">Select Seat Type</option>
+                    <option value="Regular">Regular</option>
+                    <option value="Premium">Premium</option>
+                    <option value="VIP">VIP</option>
+                    <option value="Recliner">Recliner</option>
+                    <option value="Couple's Seat">Couple's Seat</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="screen1">SCREEN</div>
+        <div class="screen">
+            <div class="seating-chart">
+
+                <div class="top">
+                    <div class="left">
+                        <div class="row">
+                            <div class="seat" id="B16" onclick="toggleSeat(this)">B16</div>
+                            <div class="seat" id="B15" onclick="toggleSeat(this)">B15</div>
+                            <div class="seat" id="B14" onclick="toggleSeat(this)">B14</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="C16" onclick="toggleSeat(this)">C16</div>
+                            <div class="seat" id="C15" onclick="toggleSeat(this)">C15</div>
+                            <div class="seat" id="C14" onclick="toggleSeat(this)">C14</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="D16" onclick="toggleSeat(this)">D16</div>
+                            <div class="seat" id="D15" onclick="toggleSeat(this)">D15</div>
+                            <div class="seat" id="D14" onclick="toggleSeat(this)">D14</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="E16" onclick="toggleSeat(this)">E16</div>
+                            <div class="seat" id="E15" onclick="toggleSeat(this)">E15</div>
+                            <div class="seat" id="E14" onclick="toggleSeat(this)">E14</div>
+                        </div>
+                    </div>
+                        
+                    <div class="middle_front">
+                        <div class="row">
+                            <div class="seat" id="A13" onclick="toggleSeat(this)">A13</div>
+                            <div class="seat" id="A12" onclick="toggleSeat(this)">A12</div>
+                            <div class="seat" id="A11" onclick="toggleSeat(this)">A11</div>
+                            <div class="seat" id="A10" onclick="toggleSeat(this)">A10</div>
+                            <div class="seat" id="A9" onclick="toggleSeat(this)">A9</div>
+                            <div class="seat" id="A8" onclick="toggleSeat(this)">A8</div>
+                            <div class="seat" id="A7" onclick="toggleSeat(this)">A7</div>
+                            <div class="seat" id="A6" onclick="toggleSeat(this)">A6</div>
+                            <div class="seat" id="A5" onclick="toggleSeat(this)">A5</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="B13" onclick="toggleSeat(this)">B13</div>
+                            <div class="seat" id="B12" onclick="toggleSeat(this)">B12</div>
+                            <div class="seat" id="B11" onclick="toggleSeat(this)">B11</div>
+                            <div class="seat" id="B10" onclick="toggleSeat(this)">B10</div>
+                            <div class="seat" id="B9" onclick="toggleSeat(this)">B9</div>
+                            <div class="seat" id="B8" onclick="toggleSeat(this)">B8</div>
+                            <div class="seat" id="B7" onclick="toggleSeat(this)">B7</div>
+                            <div class="seat" id="B6" onclick="toggleSeat(this)">B6</div>
+                            <div class="seat" id="B5" onclick="toggleSeat(this)">B5</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="C13" onclick="toggleSeat(this)">C13</div>
+                            <div class="seat" id="C12" onclick="toggleSeat(this)">C12</div>
+                            <div class="seat" id="C11" onclick="toggleSeat(this)">C11</div>
+                            <div class="seat" id="C10" onclick="toggleSeat(this)">C10</div>
+                            <div class="seat" id="C9" onclick="toggleSeat(this)">C9</div>
+                            <div class="seat" id="C8" onclick="toggleSeat(this)">C8</div>
+                            <div class="seat" id="C7" onclick="toggleSeat(this)">C7</div>
+                            <div class="seat" id="C6" onclick="toggleSeat(this)">C6</div>
+                            <div class="seat" id="C5" onclick="toggleSeat(this)">C5</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="D13" onclick="toggleSeat(this)">D13</div>
+                            <div class="seat" id="D12" onclick="toggleSeat(this)">D12</div>
+                            <div class="seat" id="D11" onclick="toggleSeat(this)">D11</div>
+                            <div class="seat" id="D10" onclick="toggleSeat(this)">D10</div>
+                            <div class="seat" id="D9" onclick="toggleSeat(this)">D9</div>
+                            <div class="seat" id="D8" onclick="toggleSeat(this)">D8</div>
+                            <div class="seat" id="D7" onclick="toggleSeat(this)">D7</div>
+                            <div class="seat" id="D6" onclick="toggleSeat(this)">D6</div>
+                            <div class="seat" id="D5" onclick="toggleSeat(this)">D5</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="E13" onclick="toggleSeat(this)">E13</div>
+                            <div class="seat" id="E12" onclick="toggleSeat(this)">E12</div>
+                            <div class="seat" id="E11" onclick="toggleSeat(this)">E11</div>
+                            <div class="seat" id="E10" onclick="toggleSeat(this)">E10</div>
+                            <div class="seat" id="E9" onclick="toggleSeat(this)">E9</div>
+                            <div class="seat" id="E8" onclick="toggleSeat(this)">E8</div>
+                            <div class="seat" id="E7" onclick="toggleSeat(this)">E7</div>
+                            <div class="seat" id="E6" onclick="toggleSeat(this)">E6</div>
+                            <div class="seat" id="E5" onclick="toggleSeat(this)">E5</div>
+                        </div> 
+                    </div>  
+
+                <div class="right">
+
+                    <div class="row">
+                        <div class="seat" id="B4" onclick="toggleSeat(this)">B4</div>
+                        <div class="seat" id="B3" onclick="toggleSeat(this)">B3</div>
+                        <div class="seat" id="B2" onclick="toggleSeat(this)">B2</div>
+                    </div>
+                    <div class="row">
+                        <div class="seat" id="C4" onclick="toggleSeat(this)">C4</div>
+                        <div class="seat" id="C3" onclick="toggleSeat(this)">C3</div>
+                        <div class="seat" id="C2" onclick="toggleSeat(this)">C2</div>
+                    </div>
+                    <div class="row">
+                        <div class="seat" id="D4" onclick="toggleSeat(this)">D4</div>
+                        <div class="seat" id="D3" onclick="toggleSeat(this)">D3</div>
+                        <div class="seat" id="D2" onclick="toggleSeat(this)">D2</div>
+                    </div>
+                    <div class="row">
+                        <div class="seat" id="E4" onclick="toggleSeat(this)">E4</div>
+                        <div class="seat" id="E3" onclick="toggleSeat(this)">E3</div>
+                        <div class="seat" id="E2" onclick="toggleSeat(this)">E2</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom">
+                    <div class="left_back">
+                        <div class="row">
+                            <div class="seat" id="F17" onclick="toggleSeat(this)">F17</div>
+                            <div class="seat" id="F16" onclick="toggleSeat(this)">F16</div>
+                            <div class="seat" id="F15" onclick="toggleSeat(this)">F15</div>
+                            <div class="seat" id="F14" onclick="toggleSeat(this)">F14</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="G17" onclick="toggleSeat(this)">G17</div>
+                            <div class="seat" id="G16" onclick="toggleSeat(this)">G16</div>
+                            <div class="seat" id="G15" onclick="toggleSeat(this)">G15</div>
+                            <div class="seat" id="G14" onclick="toggleSeat(this)">G14</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="H17" onclick="toggleSeat(this)">H17</div>
+                            <div class="seat" id="H16" onclick="toggleSeat(this)">H16</div>
+                            <div class="seat" id="H15" onclick="toggleSeat(this)">H15</div>
+                            <div class="seat" id="H14" onclick="toggleSeat(this)">H14</div>
+                        </div>
+                        <div class="row">
+                            <div class="seat" id="J17" onclick="toggleSeat(this)">J17</div>
+                            <div class="seat" id="J16" onclick="toggleSeat(this)">J16</div>
+                            <div class="seat" id="J15" onclick="toggleSeat(this)">J15</div>
+                            <div class="seat" id="J14" onclick="toggleSeat(this)">J14</div>
+                        </div>
+                    </div>
+
+                    <div class="middle_back">   
+                        <div class="row">
+                            <div class="seat" id="F13" onclick="toggleSeat(this)">F13</div>
+                            <div class="seat" id="F12" onclick="toggleSeat(this)">F12</div>
+                            <div class="seat" id="F11" onclick="toggleSeat(this)">F11</div>
+                            <div class="seat" id="F10" onclick="toggleSeat(this)">F10</div>
+                            <div class="seat" id="F9" onclick="toggleSeat(this)">F9</div>
+                            <div class="seat" id="F8" onclick="toggleSeat(this)">F8</div>
+                            <div class="seat" id="F7" onclick="toggleSeat(this)">F7</div>
+                            <div class="seat" id="F6" onclick="toggleSeat(this)">F6</div>
+                            <div class="seat" id="F5" onclick="toggleSeat(this)">F5</div>
+                        </div>
+
+                            <div class="row">
+                                <div class="seat" id="G13" onclick="toggleSeat(this)">G13</div>
+                                <div class="seat" id="G12" onclick="toggleSeat(this)">G12</div>
+                                <div class="seat" id="G11" onclick="toggleSeat(this)">G11</div>
+                                <div class="seat" id="G10" onclick="toggleSeat(this)">G10</div>
+                                <div class="seat" id="G9" onclick="toggleSeat(this)">G9</div>
+                                <div class="seat" id="G8" onclick="toggleSeat(this)">G8</div>
+                                <div class="seat" id="G7" onclick="toggleSeat(this)">G7</div>
+                                <div class="seat" id="G6" onclick="toggleSeat(this)">G6</div>
+                                <div class="seat" id="G5" onclick="toggleSeat(this)">G5</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat" id="H13" onclick="toggleSeat(this)">H13</div>
+                                <div class="seat" id="H12" onclick="toggleSeat(this)">H12</div>
+                                <div class="seat" id="H11" onclick="toggleSeat(this)">H11</div>
+                                <div class="seat" id="H10" onclick="toggleSeat(this)">H10</div>
+                                <div class="seat" id="H9" onclick="toggleSeat(this)">H9</div>
+                                <div class="seat" id="H8" onclick="toggleSeat(this)">H8</div>
+                                <div class="seat" id="H7" onclick="toggleSeat(this)">H7</div>
+                                <div class="seat" id="H6" onclick="toggleSeat(this)">H6</div>
+                                <div class="seat" id="H5" onclick="toggleSeat(this)">H5</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat" id="J13" onclick="toggleSeat(this)">J13</div>
+                                <div class="seat" id="J12" onclick="toggleSeat(this)">J12</div>
+                                <div class="seat" id="J11" onclick="toggleSeat(this)">J11</div>
+                                <div class="seat" id="J10" onclick="toggleSeat(this)">J10</div>
+                                <div class="seat" id="J9" onclick="toggleSeat(this)">J9</div>
+                                <div class="seat" id="J8" onclick="toggleSeat(this)">J8</div>
+                                <div class="seat" id="J7" onclick="toggleSeat(this)">J7</div>
+                                <div class="seat" id="J6" onclick="toggleSeat(this)">J6</div>
+                                <div class="seat" id="J5" onclick="toggleSeat(this)">J5</div>
+                            </div>
+                        </div>
+                        <div class="right_back">
+                            <div class="row">
+                                <div class="seat" id="F4" onclick="toggleSeat(this)">F4</div>
+                                <div class="seat" id="F3" onclick="toggleSeat(this)">F3</div>
+                                <div class="seat" id="F2" onclick="toggleSeat(this)">F2</div>
+                                <div class="seat" id="F1" onclick="toggleSeat(this)">F1</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat" id="G4" onclick="toggleSeat(this)">G4</div>
+                                <div class="seat" id="G3" onclick="toggleSeat(this)">G3</div>
+                                <div class="seat" id="G2" onclick="toggleSeat(this)">G2</div>
+                                <div class="seat" id="G1" onclick="toggleSeat(this)">G1</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat" id="H4" onclick="toggleSeat(this)">H4</div>
+                                <div class="seat" id="H3" onclick="toggleSeat(this)">H3</div>
+                                <div class="seat" id="H2" onclick="toggleSeat(this)">H2</div>
+                                <div class="seat" id="H1" onclick="toggleSeat(this)">H1</div>
+                            </div>
+                            <div class="row">
+                                <div class="seat" id="J4" onclick="toggleSeat(this)">J4</div>
+                                <div class="seat" id="J3" onclick="toggleSeat(this)">J3</div>
+                                <div class="seat" id="J2" onclick="toggleSeat(this)">J2</div>
+                                <div class="seat" id="J1" onclick="toggleSeat(this)">J1</div>
+                            </div>
+                        </div>
+                </div>        
+            </div>
+        </div>
+
+
+        <div class="legend">
+            <div><span class="available"></span> Available</div>
+            <div><span class="taken"></span> Taken</div>
+            <div><span class="selected"></span> Selected</div>
+            <div><span class="booked"></span> Booked</div>
+        </div>
+        <div class="payment-section">
+            <select name="payment-method">
+                <option value="">Payment Method</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="GCash">GCash</option>
+                <option value="PayMaya">PayMaya</option>
+                <option value="BPI Online">BPI Online</option>
+                <option value="BDO Online">BDO Online</option>
+                <option value="Cash on Delivery">Cash on Delivery</option>
+                <option value="GrabPay">GrabPay</option>
+                <option value="Coins.ph">Coins.ph</option>
+            </select>
+            <button type="button">Proceed to Payment</button>
+        </div>
+        <div class="payment-details">
+            <p>Selected Seats: <span id="selected-seats">None</span></p>
+            <p>Total Price: <span id="total-price">&#8369;0.00</span></p>
+        </div>
+    </div>
+
+    <div class="popupTrailer">
+        <button class="close-btn" onclick="closePopup()">×</button>
+        <div class="video-container">
+            <video width="560" height="315" autoplay controls>
+                <source src="1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content">
+            <h1>Godzilla x Kong: The New Empire</h1>
+            <p class="details">PG | 2hrs, 30 mins</p>
+            <div class="tags">
+                <span>Action</span>
+                <span>Adventure</span>
+                <span>Sci-Fi</span>
+                <span>Fantasy</span>
+            </div>
+            <p class="description">
+                Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description
+            </p>
+            <div class="credits">
+                <p><strong>Main Cast:</strong> Name</p>
+                <p><strong>Director:</strong> Name</p>
+                <p><strong>Writer:</strong> Name</p>
+                <p><strong>Film Producer:</strong> Name</p>
+                <p><strong>Released by:</strong> Name</p>
+            </div>
+            <div class="comment-section">
+                <h2>Write your review</h2>
+                <textarea id="comment" placeholder="Write your review"></textarea>
+                <div class="stars" id="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-btn" onclick="submitComment()">Submit</button>
+            </div>
+            <div class="review-section">
+                <h2>Movie Reviews</h2>
+                <div class="review">
+                    <p><strong>@username</strong> 1 day ago</p>
+                    <p>Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review</p>
+                    <div class="rating">
+                        <span>★★★☆☆</span>
+                    </div>
+                </div>
+                <!-- Repeat for more reviews -->
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="book.js"></script>
+    <script src="trailer.js"></script>
+
+</body>
+
+</html>
