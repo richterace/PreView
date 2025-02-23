@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Form</title>
+    <link rel="stylesheet" href="trailer.css">
+</head>
+<body>
+    
+    <div class="popup">
+        <button class="close-btn" onclick="closePopup()">×</button>
+        <div class="video-container">
+            <video width="560" height="315" autoplay controls>
+                <source src="1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="content">
+            <h1>Godzilla x Kong: The New Empire</h1>
+            <p class="details">PG | 2hrs, 30 mins</p>
+            <div class="tags">
+                <span>Action</span>
+                <span>Adventure</span>
+                <span>Sci-Fi</span>
+                <span>Fantasy</span>
+            </div>
+            <p class="description">
+                Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description Movie Description
+            </p>
+            <div class="credits">
+                <p><strong>Main Cast:</strong> Name</p>
+                <p><strong>Director:</strong> Name</p>
+                <p><strong>Writer:</strong> Name</p>
+                <p><strong>Film Producer:</strong> Name</p>
+                <p><strong>Released by:</strong> Name</p>
+            </div>
+            <div class="comment-section">
+                <h2>Write your review</h2>
+                <textarea id="comment" placeholder="Write your review"></textarea>
+                <div class="stars" id="stars">
+                    <span class="star" data-value="1">★</span>
+                    <span class="star" data-value="2">★</span>
+                    <span class="star" data-value="3">★</span>
+                    <span class="star" data-value="4">★</span>
+                    <span class="star" data-value="5">★</span>
+                </div>
+                <button class="submit-btn" onclick="submitComment()">Submit</button>
+            </div>
+            <div class="review-section">
+                <h2>Movie Reviews</h2>
+                <div class="review">
+                    <p><strong>@username</strong> 1 day ago</p>
+                    <p>Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review Movie Review</p>
+                    <div class="rating">
+                        <span>★★★☆☆</span>
+                    </div>
+                </div>
+                <!-- Repeat for more reviews -->
+            </div>
+            
+        </div>
+        
+    </div>
+    <div class="overlay" id="overlay"></div>
+    <script src="trailer.js"></script>
+</body>
+</html>
