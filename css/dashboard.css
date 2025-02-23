@@ -1,0 +1,437 @@
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    background-color: #000000;
+    color: white;
+  
+}
+
+header {
+    background: linear-gradient(to bottom, rgb(93, 2, 2, 1), rgba(131, 16, 16, 0));
+    background-size: cover; /* ensure the image covers the entire header */
+    position: fixed;
+    height: 272px;
+    width: 100%; /* Adjusting width to be responsive */
+    top: 0;
+    display: flex; /* Ensure flex properties work */
+    box-sizing: border-box; /* Ensure padding/border doesn't affect width */
+    z-index: 1;
+}
+#background-img {
+    width: 100%;
+    height: 600px;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+    object-fit: cover; /* Ensure the image covers the entire header */
+    position: absolute; /* Position it absolutely to cover the header */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; /* Ensure it stays behind any other content */
+}
+
+.intro-bg {
+    display: none;
+  
+}
+
+.intro-bg .popupButton{
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 150px;
+    height: 55px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 330px;
+    top: 360px; 
+    position: absolute;
+  
+}
+
+
+#home-main{
+    margin-top:300px ;
+}
+@media (max-width: 768px) {
+    header {
+        height: 100px; /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 80px; /* Further adjust height for smaller screens */
+    }
+}
+
+
+.header-container {
+    display: flex;
+   
+
+}
+
+.logoimg {
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 60px;
+   
+ 
+}
+
+
+.user-menu {
+    display: flex;
+    align-items: center;
+    padding-left: 820px;
+}
+
+.user-menu img {
+    height: 30px;
+    margin-left: 15px;
+}
+
+
+
+.header-container ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 20px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.header-container ul li {
+    margin: 0 100px;
+     
+}
+
+.header-container ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    display: block;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    /* Font family */
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    width: 180px;
+    text-align: center;
+}
+.header-container ul li a.active {
+    background-color: #000000;
+    color: #ccc;
+    border-radius: 15px 15px 0 0; /* Top-left and top-right curved in, bottom-left and bottom-right straight */
+    overflow: hidden; /* Ensures content does not overflow rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-top: 1em; /* Extend the height from the bottom */
+    width: 180px;
+    text-align: center;
+}
+
+/* Dark hover effect */
+.header-container ul li :hover {
+    background-color: #000000;
+    color: #ccc;
+    border-radius: 15px 15px 0 0; /* Top-left and top-right curved in, bottom-left and bottom-right straight */
+    overflow: hidden; /* Ensures content does not overflow rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding-top: 1em; /* Extend the height from the bottom */
+    width: 180px;
+    text-align: center;
+
+}
+
+
+main {
+    padding: 20px;
+    padding-top: 200px; 
+}
+
+section {
+    margin-bottom: 40px;
+    height: 650px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-bottom: 170px;
+}
+
+.section {
+    display: none;
+}
+.active {
+    display: block;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    padding-left: 30px;
+
+}
+
+.movies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+
+}
+
+.movie-card {
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    height: 550px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#home-main .movie-poster {
+    background-color: #444;
+    height: 400px;
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    flex: 0 0 30%; /* Adjust the width of the poster */
+    overflow: hidden; /* Ensure the image doesn't overflow the div */
+    margin-left: 10%;
+}
+
+#home-main .movie-poster img {
+    width: 100%; /* Make the image fill the container */
+    height: 400px; 
+    display: block; /* Remove any extra space below the image */
+    border-radius: 15px;
+ 
+}
+
+#now-showing-main .movie-poster {
+    background-color: #444;
+    height: 400px;
+    width: 250px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    flex: 0 0 30%; /* Adjust the width of the poster */
+    overflow: hidden; /* Ensure the image doesn't overflow the div */
+    margin-left: 10%;
+}
+
+#now-showing-main .movie-poster img {
+    width: 100%; /* Make the image fill the container */
+    height: 400px; 
+    display: block; /* Remove any extra space below the image */
+    border-radius: 15px;
+ 
+}
+
+.movie-posterSHOWMORE {
+    background-color: #444;
+    height: 565px;
+    width: 350px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    flex: 0 0 30%; /* Adjust the width of the poster */
+    overflow: hidden; /* Ensure the image doesn't overflow the div */
+    margin-left: 10%;
+}
+
+.movie-posterSHOWMORE  img {
+    width: 100%; /* Make the image fill the container */
+    height: 565px; 
+    display: block; /* Remove any extra space below the image */
+    border-radius: 15px;
+    
+}
+.showMore button {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 150px;
+    height: 55px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    margin-left: 130px;
+
+}
+
+.movie-info{
+    align-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    margin-left: 20%;
+}
+.movie-info h3 {
+    padding-top: 20px;
+    height: 70px;
+    font-size: 32px;
+    margin-top: 20px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+
+
+}
+
+.movie-info p {
+    margin: 15px 0;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.movie-info button {
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    width: 150px;
+    height: 55px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.page-section {
+    display: none;
+}
+
+#home-section {
+    display: block;
+}
+
+#now-showing-main .movie-card{
+
+    padding-bottom: 100px;
+
+}
+
+#streaming-soon-main .movie-card{
+
+        background: linear-gradient(to right, rgb(117, 20, 20), transparent);
+        border-radius: 10px;
+        width: 1000px;
+        height: 750px;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    
+    
+    }
+    
+    #streaming-soon-main .movie-poster{
+    
+        border-radius: 10px;
+        width: 480px;
+        height: 650px;
+        padding-left: 20px;
+    
+    
+       
+    }
+    
+    #streaming-soon-main .movie-poster img{
+    
+        border-radius: 10px;
+        width: 480px;
+        height: 650px;
+        padding-left: 20px;
+    
+    }
+    #streaming-soon-main .movie-info p {
+        margin: 15px 0;
+        font-family: 'Almarai', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        width: 250px;
+    }
+
+
+#upcoming-movies-main .movie-card {
+    background: linear-gradient(to right, rgb(73, 73, 73), transparent);
+    border-radius: 10px;
+    width: 1000px;
+    height: 750px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 40px;
+
+
+}
+
+#upcoming-movies-main .movie-poster{
+
+    border-radius: 10px;
+    width: 480px;
+    height: 650px;
+    padding-left: 20px;
+
+
+   
+}
+
+#upcoming-movies-main .movie-poster img{
+
+    border-radius: 10px;
+    width: 480px;
+    height: 650px;
+    padding-left: 20px;
+
+}
+#upcoming-movies-main  .movie-info p {
+    margin: 15px 0;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    width: 250px;
+}
+
+
+#now-showing-main .movies-grid{
+
+    padding-left: 50px;
+
+}
+
+#streaming-soon-main .movies-grid{
+
+    padding-left: 50px;
+
+}
+
+
+#upcoming-movies-main .movies-grid{
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+
