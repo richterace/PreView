@@ -4,10 +4,10 @@ $connect = Connect();
 
 session_start();
 
-if (!isset($_SESSION['username'])) {
-    header('Location: login.php'); // Redirect if not logged in
-    exit();
-}
+// if (!isset($_SESSION['username'])) {
+//     header('Location: login.php'); // Redirect if not logged in
+//     exit();
+// }
 
 try {
     if (isset($_POST['save_creds'])) {
